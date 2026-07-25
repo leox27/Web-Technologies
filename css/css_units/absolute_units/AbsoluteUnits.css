@@ -1,0 +1,52 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+body{
+    margin: 30px;
+}
+
+#absolute_units_heading{
+    font-size: 50px;
+}
+
+/* .absolute_unit_blocks{
+
+} */
+
+#pixel_unit{
+    width: 100px;
+    height: 100px;
+    background-color: navy;
+}
+#centimeter_unit{
+    width: 15cm;
+    height: 2.5cm;
+    background-color: lightgray;
+}
+#millimeter_unit{
+    width: 10mm;
+    height: 12.5mm;
+    background-color: purple;
+}
+#inch_unit{
+    width: 1in;
+    height: 1in;
+    background-color: gray;
+}
+#point_unit{
+    width: 50pt;
+    height: 25pt;
+    background-color: orange;
+}
+#picas_unit{
+    width: 50pc;
+    height: 1pc;
+    background-color: cadetblue;
+}
