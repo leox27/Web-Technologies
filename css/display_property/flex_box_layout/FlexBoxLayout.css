@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+/*
+1.flex-container properties
+    1.1.flex-direction: row(default value) | row-reverse | column | column-reverse;
+    1.2.justify-content: flex-start(default value) | flex-end | center | space-around | space-between | space-evenly;
+    1.3.align-items: stretch(default value) | flex-start | flex-end | center;
+    1.4.column-gap: ;
+    1.5.row-gap: ;
+    1.6.gap: ;
+    1.7.flex-wrap: ;
+2.flex-items properties
+    2.1.flex-grow: growing-factor;
+    2.2.flex-basis: ;
+*/
+
+
+/* Course Headings */
+#courses_heading_container{
+    background-color: navy;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.courses_headings{
+    font-size: 35px;
+    color: black;
+    background-color: lightgray;
+    padding: 5px;
+}
+
+/* Circular balls */
+#circular_container{
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* margin-top: 30px; */
+}
+
+.circular_blocks{
+    width: 150px;
+    height: 150px;
+    background-color: navy;
+    border-radius: 50%;
+}
+
+/* Roman Numbers */
+#roman_numbers_blocks_container{
+    width: 100%;
+    height: 85px;
+    background-color: brown;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    cursor: pointer;
+}
+
+.roman_numbers_blocks{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    background-color: burlywood;
+    padding: 10px;
+
+    transition: all 5000ms ease-in-out;
+}
+
+#roman_numbers_blocks_container:hover > #first_roman_numbers, #roman_numbers_blocks_container:hover > #third_roman_numbers, #roman_numbers_blocks_container:hover > #fifth_roman_numbers{
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* rectangular boxes */
+#rectangular_blocks_container{
+    width: 100%;
+    height: 400px;
+    
+    
+    background-color: coral;
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: row;
+    
+    gap: 20px;
+}
+.rectangular_blocks{
+    flex-basis: 100px;
+    height: 75px;
+    background-color: cadetblue;
+
+    /* 
+    #flex-basis:
+    Defines the initial size of a flex item along the main axis.
+
+    row    → controls initial width
+    column → controls initial height
+
+    Used on flex items (children).
+    */
+}
+
+/* Square blocks */
+#square_blocks_container{
+    width: 100%;
+    height: 400px;
+    
+    
+    background-color: chartreuse;
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+}
+.square_blocks{
+    width: 100px;
+    height: 75px;
+    background-color: cadetblue;
+
+    flex-shrink: 1;
+    /*
+    #flex-shrink:
+
+    Controls how much a flex item shrinks
+    when the available space is insufficient.
+
+    Default value:
+    flex-shrink: 1;
+
+    0 → item will not shrink
+    1 → item can shrink
+    */
+}
+
+/* Numbers */
+#numbers_blocks_container{
+    width: 100%;
+    background-color: navy;
+    padding: 15px;
+    
+    display: flex;
+    /* flex-direction: row;
+    align-items: flex-start; */
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.numbers_blocks{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    background-color: red;
+    padding: 10px;
+    border-radius: 20px;
+
+    /* flex-basis: auto; */
+     /* flex: 1 1 auto; */
+     flex-grow: 1;
+}
+
