@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: ProductSans;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: productSans;
+    src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+body{
+    margin: 25px;
+}
+
+#filter_property_heading{
+    font-size: 50px;
+}
+
+.images_tools{
+    width: 700px;
+    cursor: pointer;
+}
+
+#naruto_sasuke_image:hover{
+    /* filter: blur(value in px or em); */
+    filter: blur(10px);
+    
+    /* filter: brightness(value in % or 0-1); */
+    filter: brightness(0.3);
+
+    /* filter: contrast(value in % or numeric); */
+    filter: contrast(100);
+
+    /* filter: drop-shadow(horizontal-offset vertical-offset spread-amount color); */
+    filter: drop-shadow(20px 20px 5px purple);
+
+    /* filter: grayscale(value in % or 0-1); */
+    filter: grayscale(75%);
+
+    /* filter: hue-rotate(value in deg); */
+    filter: hue-rotate(330deg);
+
+    /* filter: invert(value in % or 0-1); */
+    filter: invert(30%);
+
+    /* filter: none (default value); */
+    filter: none;
+
+    /* filter: opacity(value in % or 0-1); */
+    filter: opacity(10%);
+    
+    /* filter: opacity(value in % or numeric); */
+    filter: saturate(30);
+ 
+    /* filter: sepia(value in % or numeric); */
+    filter: sepia(60%);
+
+}
