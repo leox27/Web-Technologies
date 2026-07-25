@@ -1,0 +1,62 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+#earth_rotation_tools_container{
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.axis_buttons{
+    font-size: 18vw;
+    font-weight: bold;
+    width: 300px;
+    height: 300px;
+    outline: none;
+    border: none;
+    background-color: lightgray;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 15px gray,inset 0px 0px 30px,inset 0px 0px 45px gray;
+    cursor: pointer;
+}
+.axis_buttons:hover{
+    color: navy;
+}
+#earth_image{
+    width: 300px;
+    position: absolute;
+    /* offset properties */
+    bottom: 20px;
+}
+.axis_buttons:hover~#earth_image{
+    transition: transform 2500ms linear;
+}
+#x_axis_button:hover~#earth_image{
+    transform: rotateX(360deg);
+}
+#y_axis_button:hover~#earth_image{
+    transform: rotateY(360deg);
+}
+#z_axis_button:hover~#earth_image{
+    animation: animateEarthImage 50000ms linear infinite normal both;
+}
+@keyframes animateEarthImage{
+    /* first keyframe */
+    from{
+        transform: rotate(0deg);
+    }
+    /* last keyframe */
+    to{
+        transform: rotate(360deg);
+    }
+}
