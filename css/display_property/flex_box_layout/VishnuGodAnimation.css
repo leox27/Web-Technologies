@@ -1,0 +1,80 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#vishnu_god_image{
+    width: 400px;
+    cursor: pointer;
+}
+#vishnu_god_image:hover{
+    animation: animateBrahmaGodImage 10000ms ease-in-out infinite alternate both;
+}
+@keyframes animateBrahmaGodImage{
+    /* first keyframe */
+    from{
+        filter: hue-rotate(0deg);
+    }
+    /* second keyframe */
+    7%{
+        filter: hue-rotate(30deg);
+    }
+    /* third keyframe */
+    14%{
+        filter: hue-rotate(60deg);
+    }
+    /* fourth keyframe */
+    21%{
+        filter: hue-rotate(90deg);
+    }
+    /* fifth keyframe */
+    28%{
+        filter: hue-rotate(120deg);
+    }
+    /* sixth keyframe */
+    35%{
+        filter: hue-rotate(150deg);
+    }
+    /* seventh keyframe */
+    42%{
+        filter: hue-rotate(180deg);
+    }
+    /* eight keyframe */
+    49%{
+        filter: grayscale(100%);
+    }
+    /* nineth keyframe */
+    56%{
+        filter: grayscale(50%);
+    }
+    /* tenth keyframe */
+    63%{
+        filter: grayscale(0%);
+    }
+    /* eleventh keyframe */
+    70%{
+        filter: hue-rotate(210deg);
+    }
+    /* twelveth keyframe */
+    77%{
+        filter: hue-rotate(240deg);
+    }
+    /* thirteenth keyframe */
+    84%{
+        filter: hue-rotate(270deg);
+    }
+    /* fourteenth keyframe */
+    91%{
+        filter: hue-rotate(300deg);
+    }
+    /* last keyframe */
+    to{
+        filter: hue-rotate(330deg);
+    }
+}
