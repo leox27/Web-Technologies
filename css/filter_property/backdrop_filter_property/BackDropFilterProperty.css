@@ -1,0 +1,13 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../../../assets/images/FoundingTitanImage2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    filter: blur(10px);
+}
