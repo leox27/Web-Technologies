@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: ProductSans;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+body{
+    margin: 30px;
+}
+
+#display_earth_button{
+    width: 250px;
+    height: 75px;
+    font-size: 35px;
+    color: white;
+    background-color: navy;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    padding: 10px;
+
+    cursor: pointer;
+}
+
+#earth_image{
+    width: 250px;
+    margin-top: 20px;
+
+    display: none;
+}
+
+#display_earth_button:hover{
+    box-shadow: 0px 3px 2.5px rgb(47, 47, 248);
+}
+
+#display_earth_button:hover ~ #earth_image{
+    display: flex;
+}
