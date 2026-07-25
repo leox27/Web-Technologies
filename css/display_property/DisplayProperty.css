@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+
+#courses_heading_container{
+    background-color: black;
+    padding: 30px;
+}
+
+.courses_headings{
+    font-size: 50px;
+    color: yellowgreen;
+    background-color: lightgray;
+    padding: 5px;
+    margin-bottom: 10px;
+
+    display: block;
+    /* display: inline-block; */
+}
+/* .courses_headings{
+    width: 80%;           ###Providing dimention after passing 'inline-block' to 'display' property will not work.
+    font-size: 50px;
+    color: greenyellow;
+    padding: 10px;
+
+    display: inline-block;
+} */
+
+.inline_contents{
+    font-size: 50px;
+    color: white;
+    padding: 10px;
+
+    display: inline-block;
+}
+/* .inline_contents{
+    width: 50%;
+    font-size: 50px;
+    color: white;
+
+    display: inline-block;
+} */
+
+#italics_content{
+    background-color: red;
+}
+#bold_content{
+    background-color: navy;
+}
