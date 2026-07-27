@@ -1,0 +1,261 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+body{
+    margin: 30px;
+}
+
+/* Polygon Shapes */
+#clip_path_property_container{
+    width: 100%;
+    height: 1530px;
+    background-color: gray;
+    padding: 30px;
+}
+
+.clip_path_property_tools{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/* Clip-path: Polygon property */
+#polygon_shapes_blocks_container{
+    width: 100%;
+    height: 740px;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+#polygon_shapes{
+    font-size: 35px;
+    color: purple;
+}
+
+.polygon_shapes_blocks{
+    width: 200px;
+    height: 150px;
+    background-color: purple;
+}
+
+/* Clip-path: Polygon property */
+/* 
+clip-path: polygon(x-axis-coordinate-% y-axis-coordinate-%, x-axis-coordinate-% y-axis-coordinate-%, x-axis-coordinate-% y-axis-coordinate-%,.......);
+*/
+#first_polygon_block{
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+#second_polygon_block{
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+#third_polygon_block{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+}
+#fourth_polygon_block{
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+#fifth_polygon_block{
+    clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+}
+#sixth_polygon_block{
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+}
+#seventh_polygon_block{
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}
+#eighth_polygon_block{
+    clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+}
+#ninth_polygon_block{
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+#tenth_polygon_block{
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+#eleventh_polygon_block{
+    clip-path: polygon(25% 0%, 125% 0%, 100% 100%, 0% 100%);
+}
+
+#pentagon_shape_block{
+    width: 180px;
+    height: 150px;
+    background-image: radial-gradient(
+        circle at center,
+        #ff00cc,
+        #7b2ff7,
+        #3a0ca3,
+        #240046,
+        #10002b
+    );
+
+    clip-path: polygon(50% 0%, 100% 40%, 80% 100%, 20% 100%, 0% 40%);
+}
+
+#octagon_shape_block{
+    width: 180px;
+    height: 180px;
+    background-image: radial-gradient(
+        circle at center,
+        #fff3b0,
+        #ffd166,
+        #fca311,
+        #e85d04,
+        #9d0208
+    );
+    clip-path: polygon(
+        29.3% 0%,
+        70.7% 0%,
+        100% 29.3%,
+        100% 70.7%,
+        70.7% 100%,
+        29.3% 100%,
+        0% 70.7%,
+        0% 29.3%
+    );
+}
+
+/* Clip-path: Circle property */
+/* 
+clip-path: circle(size % at position-x % position-y 10% | left | top-left | top-right | right | bottom-right | bottom | bottom-left);
+*/
+
+#circle_shapes_container{
+    width: 100%;
+    height: 365px;
+    background-color: chartreuse;
+    padding: 10px;
+}
+
+#first_circle_shape_block{
+    width: 200px;
+    height: 180px;
+    background: radial-gradient(circle at center,#ff6b81,#e63956,#a4133c,#800f2f,#4a051c);
+
+    clip-path: circle(35% at 10% 10%);
+}
+#second_circle_shape_block{
+    width: 200px;
+    height: 180px;
+    background: radial-gradient(circle at center,#ff6b81,#e63956,#a4133c,#800f2f,#4a051c);
+    clip-path: circle(25%);
+}
+#third_circle_shape_block{
+    width: 200px;
+    height: 180px;
+    background: radial-gradient(circle at center,#ff6b81,#e63956,#a4133c,#800f2f,#4a051c);
+    clip-path: circle(15%);
+}
+#fourth_circle_shape_block{
+    width: 200px;
+    height: 180px;
+    background: radial-gradient(circle at center,#ff6b81,#e63956,#a4133c,#800f2f,#4a051c);
+    clip-path: circle(25%);
+    /* clip-path: circle(25% at center); By default*/
+    /* clip-path: circle(25% at top left); */
+}
+#fifth_circle_shape_block{
+    width: 200px;
+    height: 180px;
+    background: radial-gradient(circle at center,#ff6b81,#e63956,#a4133c,#800f2f,#4a051c);
+    clip-path: circle(35%);
+}
+
+
+/* Clip-path: Ellipse property */
+/* 
+clip-path: ellipse(horizontal-radius-% vertical-radius-% at position-x-% position-y-10% | left | top-left | top-right | right | bottom-right | bottom | bottom-left);
+*/
+#ellipse_shape_container{
+    width: 100%;
+    height: 365px;
+    background-color: chartreuse;
+    padding: 10px;
+}
+
+/* 1. Neon Purple Ellipse */
+#first_ellipse{
+    width: 250px;
+    height: 150px;
+
+    background: radial-gradient(
+        circle at center,
+        #ff00cc,
+        #7b2ff7,
+        #3a0ca3,
+        #10002b
+    );
+
+    clip-path: ellipse(50% 35% at 50% 50%);
+}
+/* 2. Neon Ocean Ellipse */
+#second_ellipse{
+    width: 250px;
+    height: 150px;
+
+    background: radial-gradient(
+        circle at center,
+        #80ffdb,
+        #00b4d8,
+        #0077b6,
+        #03045e
+    );
+
+    clip-path: ellipse(50% 50% at 50% 50%);
+}
+/* 3. Neon Fire Ellipse */
+#third_ellipse{
+    width: 300px;
+    height: 150px;
+
+    background: radial-gradient(
+        circle at center,
+        #fff3b0,
+        #ffd166,
+        #ff7b00,
+        #e85d04,
+        #9d0208
+    );
+
+    clip-path: ellipse(50% 25% at 50% 50%);
+}
+/* 4. Neon Green Ellipse */
+#fourth_ellipse{
+    width: 250px;
+    height: 180px;
+
+    background: radial-gradient(
+        circle at center,
+        #d9ff00,
+        #70e000,
+        #38b000,
+        #006400
+    );
+
+    clip-path: ellipse(35% 35% at 50% 50%);
+    transform: rotateZ(90deg);
+}
+/* 5. Neon Pink / Maroon Ellipse */
+#fifth_ellipse{
+    width: 250px;
+    height: 180px;
+
+    background: radial-gradient(
+        circle at center,
+        #ffccd5,
+        #ff4d6d,
+        #c9184a,
+        #800f2f,
+        #4a051c
+    );
+
+    clip-path: ellipse(10% 35% at 50% 50%);
+}
