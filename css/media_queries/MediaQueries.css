@@ -1,0 +1,85 @@
+
+/* common codes */
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: ProductSans;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+body{
+    margin: 25px;
+}
+
+/* responsive codes */
+/* Mobile: small screen responsive codes */
+@media only screen and (min-width: 320px) {
+    #media_screen_container{
+        width: 120px;
+        height: 120px;
+        background-color: red;
+    }
+}
+
+/* Mobile: medium screen responsive codes ()*/
+@media only screen and (min-width: 375px) {
+    #media_screen_container{
+        width: 120px;
+        height: 120px;
+        background-color: navy;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+}
+
+/* Mobile: large screen responsive codes ()*/
+@media only screen and (min-width: 425px) {
+    #media_screen_container{
+        width: 150px;
+        height: 150px;
+        background-color: yellow;
+        clip-path: polygon(50% 0%, 100% 30%, 50% 100%, 0% 30%);
+    }
+}
+
+/* Tablet: screen responsive codes ()*/
+@media only screen and (min-width: 425px) {
+    #media_screen_container{
+        width: 150px;
+        height: 150px;
+        background-color: yellow;
+        clip-path: polygon(50% 0%, 100% 30%, 50% 100%, 0% 30%);
+    }
+}
+
+/* Laptop: Normal screen responsive codes ()*/
+@media only screen and (min-width: 1024px) {
+    #media_screen_container{
+        width: 150px;
+        height: 100px;
+        background-color: gray;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+    }
+}
+
+/* Laptop: Large screen responsive codes ()*/
+@media only screen and (min-width: 1440px) {
+    #media_screen_container{
+        width: 200px;
+        height: 100px;
+        background-color: black;
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    }
+}
+
+/* 4K: screen responsive codes ()*/
+@media only screen and (min-width: 2560px) {
+    #media_screen_container{
+        width: 150px;
+        height: 125px;
+        background-color: black;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    }
+}
+

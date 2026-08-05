@@ -1,0 +1,160 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#mountains_container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../../assets/images/LeftLargeMountainNight.png),url(../../../assets/images/Moon.png),url(../../../assets/images/LeftSmallMountainNight.png),url(../../../assets/images/SmallSun.png),url(../../../assets/images/RightSmallMountainNight.png),url(../../../assets/images/RightLargeMountainNight.png),url(../../../assets/images/Space.png);
+    background-size: 50%,15%,45%,25%,45%,50%,100% 100%;
+    background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,repeat;
+    background-position: 0% 100%,5% 5%,40% 100%,50% 130%,60% 100%,100% 100%,center;
+    transition: all 1500ms ease-in-out;
+}
+
+#login_form_container{
+    color: white;
+    width: 35vw;
+    height: 85vh;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    position: absolute;
+    box-shadow: 0px 0px 5px white,0px 0px 10px white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* #login_form_container:hover + #mountains_container{
+    background-image: url(../../../assets/images/LeftLargeMountainDay.png),url(../../../assets/images/Moon.png),url(../../../assets/images/LeftSmallMountainDay.png),url(../../../assets/images/SmallSun.png),url(../../../assets/images/RightSmallMountainDay.png),url(../../../assets/images/RightLargeMountainDay.png),url(../../../assets/images/Sky.png);
+    background-size: 50%,15%,45%,25%,45%,50%,100% 100%;
+    background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
+    background-position: -20% 120%,10% 90%,20% 120%,70% -20%,80% 120%,120% 120%,center;
+} */
+
+#welcome_back_heading{
+    font-size: 50px;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+#login_form{
+    width: 100%;
+    height: 230px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+
+    position: relative;
+}
+.input_fields{
+    width: 90%;
+    height: 50px;
+    font-size: 27px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    color: white;
+    border-bottom: 3px solid white;
+    background-color: transparent;
+}
+/* .input_fields:hover{
+    transform: scale(1.050);
+} */
+.input_fields::placeholder{
+    color: white;
+}
+
+#login_button{
+    font-size: 40px;
+    font-weight: bold;
+    width: 90%;
+    height: 60px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+
+    position: absolute;
+    /* offset properties */
+    bottom: 10px;
+}
+
+#login_form_container:hover .input_fields,#login_form_container:hover #or_fieldset_legend{
+    text-shadow: 2px 2px 2px black;
+}
+#login_form_container:hover #login_button{
+    box-shadow: 0px 0px 5px white,0px 0px 7px white;
+    animation: animateLoginButton 10ms ease-in-out infinite alternate both;
+}
+
+#or_fieldset{
+    font-size: 25px;
+    width: 90%;
+    border: none;
+    border-top: 5px solid white;
+}
+#or_fieldset_legend{
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+#sign_in_options_container{
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+#sign_in_options_heading{
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+
+#social_media_icon_blocks_container{
+    width: 75%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.social_media_icon_blocks{
+    font-size: 50px;
+    text-shadow: 2px 2px 2px black;
+}
+
+#login_button:hover{
+    cursor: pointer;
+    animation: none !important;
+}
+
+/* animation logics */
+@keyframes animateLoginButton{
+    /* first keyframe */
+    from{
+        transform: skew(-0.25deg,-0.25deg);
+    }
+    /* last keyframe */
+    to{
+        transform: skew(0.25deg,0.25deg);
+    }
+}

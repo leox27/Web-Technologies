@@ -1,0 +1,39 @@
+
+/* common codes */
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: ProductSans;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+body{
+    margin: 25px;
+}
+
+/* responsive codes */
+/* Orientation: Protrait responsive codes */
+@media only print and (orientation: portrait) {
+    #web_development_heading{
+        font-size: 50px;
+    }
+    #web_development_description{
+        font-size: 20px;
+        text-align: justify;
+    }
+}
+
+/* Orientation: landscape responsive codes */
+@media only print and (orientation: landscape) {
+    #web_development_heading{
+        font-size: 50px;
+        color: orange;
+        text-shadow: 5px 5px 5px black;
+    }
+    #web_development_description{
+        font-size: 20px;
+        text-align: justify;
+    }
+}
