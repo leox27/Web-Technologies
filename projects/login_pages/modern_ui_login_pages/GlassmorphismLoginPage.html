@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlassmorphismLoginPage</title>
+    <link rel="stylesheet" href="GlassmorphismLoginPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div id="login_page_container">
+        <div id="login_page_align_layout">
+            <form id="login_form" action="#" method="post">
+
+                <!-- Login page headings container -->
+                <div id="login_page_headings_container">
+                    <div id="lock_icon_container">
+                        <i id="lock_icon" class="fa-solid fa-lock"></i>
+                    </div>
+                    <h1 id="welcome_back_heading" class="login_page_headings">
+                        Welcome Back
+                    </h1>
+                    <h2 id="login_to_continue_heading" class="login_page_headings">
+                        Login to continue to your account
+                    </h2>
+                </div>
+
+                <!-- Input boxes container -->
+                <div id="input_box_container">
+                    <div id="username_input_field_container" class="input_fields_tools">
+                        <i id="user_icon" class="fa-solid fa-user icon_tools"></i>
+                        <input type="text" name="Username" id="username_input_field" class="input_fields" placeholder="Username" autocomplete="username" required>
+                    </div>
+                    <div id="password_input_field_container" class="input_fields_tools">
+                        <i id="password_icon" class="fa-solid fa-lock icon_tools"></i>
+                        <input type="password" name="Password" id="password_input_field" class="input_fields" placeholder="Password" autocomplete="current-password" required>
+                    </div>
+                    <i id="eye_icon" class="fa-solid fa-eye"></i>
+                </div>
+
+                <!-- Remember me & forgot password section -->
+                <div id="remember_me_and_forget_password_container">
+                    <div id="remember_me_checkbox_container">
+                        <input type="checkbox" name="RememberMe" id="remember_me_checkbox_input_field">
+                        <label id="remember_me_label" class="rem_and_for_tools" for="remember_me_checkbox_input_field">Remember Me</label>
+                    </div>
+                    <a href="#" id="forget_password_link" class="rem_and_for_tools">
+                        Forget Password?
+                    </a>
+                </div>
+
+                <!-- Login Button -->
+                <button type="submit" id="login_button">Login</button>
+
+                <!-- Or continue with -->
+                <p id="divider_text">
+                    Or continue with
+                </p>
+
+                <!-- Google and GitHub sign in -->
+                <div id="google_and_github_signin_container">
+                    <div id="google_signin" class="google_and_github_signin_tools">
+                        <i id="google_icon" class="fa-brands fa-google gh_icon_tools"></i>
+                        <span id="google_heading" class="app_signin_tools">Google</span>
+                    </div>
+                    <div id="github_signin" class="google_and_github_signin_tools">
+                        <i id="github_icon" class="fa-brands fa-github gh_icon_tools"></i>
+                        <span id="github_heading" class="app_signin_tools">GitHub</span>
+                    </div>
+                </div>
+
+                <!-- Sign Up -->
+                <div id="signup_container">
+                    <p id="signup_prompt">
+                        Don't have an account?
+                    </p>
+                    <a href="#" id="signup_page_link">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
