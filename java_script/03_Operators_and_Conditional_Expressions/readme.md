@@ -1,4 +1,4 @@
-# Complete JavaScript Chapter 2: Operators & Conditional Expressions
+# Chapter 2: Operators & Conditional Expressions
 
 ## Part 1: JavaScript Operators & Expressions (Video #6)
 
