@@ -1,6 +1,5 @@
 # Chapter 1: Variables, Scopes, and Data Types
 
-
 ## Part 1: JavaScript Variables
 
 Welcome to the notes for Video #2. This guide covers what variables are, how they work in JavaScript, and the core differences between dynamic and static typing.
