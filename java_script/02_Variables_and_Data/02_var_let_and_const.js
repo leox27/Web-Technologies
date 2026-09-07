@@ -10,16 +10,16 @@
 
 // ##1. var: The var keyword is used to declare a variable in JavaScript. It has function scope, which means that it is accessible within the function in which it is declared. If it is declared outside of any function, it has global scope. However, var has some issues with hoisting and can lead to unexpected behavior, so it is generally recommended to use let or const instead.
 
-// console.log("Now we are learning about the var, let, and const in javascript!!!")
-// var a = 21
-// var b = null
-// var c = 'Surak Kumar'
-// var d = undefined
-// {
-//     var c = 'Mayur Jadhav'
-//     console.log(c);
-// }
-// console.log(c);
+console.log("Now we are learning about the var, let, and const in javascript!!!")
+var a = 21
+var b = null
+var c = 'Surak Kumar'
+var d = undefined
+{
+    var c = 'Mayur Jadhav'
+    console.log(c);
+}
+console.log(c);
 /*
 Now we are learning about the var, let, and const in javascript!!!
 Mayur Jadhav
@@ -31,15 +31,15 @@ Mayur Jadhav
 
 // ##2. let: The let keyword is used to declare a variable in JavaScript. It has block scope, which means that it is only accessible within the block in which it is declared. This makes it a better choice than var for declaring variables that are only needed within a specific block of code.
 
-// let a = 21
-// let b = null
-// let c = 'Surak Kumar'
-// let d = undefined
-// {
-//     let c = 'Mayur Jadhav'
-//     console.log(c);
-// }
-// console.log(c);
+let a = 21
+let b = null
+let c = 'Surak Kumar'
+let d = undefined
+{
+    let c = 'Mayur Jadhav'
+    console.log(c);
+}
+console.log(c);
 /*
 Mayur Jadhav
 Surak Kumar
