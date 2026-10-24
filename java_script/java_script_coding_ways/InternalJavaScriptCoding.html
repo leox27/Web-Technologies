@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternalJavaScriptCoding</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: ProductSans;
+            box-sizing: border-box;
+        }
+        @font-face {
+            font-family: ProductSans;
+            src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+        }
+        body{
+            margin: 30px;
+        }
+        #topic_heading{
+            font-size: 30px;
+            color: gold;
+        }
+    </style>
+    <!-- <script>
+        console.log("Hello World")
+        document.write("Java Script")
+        // DOM(Document Object Model) Manipulation
+        document.getElementById("topic_heading")
+    </script> -->
+</head>
+<body>
+    <h1 id="topic_heading">InternalJavaScriptCoding</h1>
+
+    <!-- Internal JavaScript Coding -->
+    <!-- JavaScript code is written inside the same HTML file using <script> tag -->
+    <!-- Put <script> in <body> if doing DOM Manipulation -->
+    <script>
+        console.log("Hello World")
+        document.write("Java Script")
+        // DOM(Document Object Model) Manipulation
+        document.getElementById("topic_heading").textContent = "Welcome to JavaScript";
+    </script>
+</body>
+</html>
