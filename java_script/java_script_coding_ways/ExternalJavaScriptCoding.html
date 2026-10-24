@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExternalJavaScriptCoding</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: ProductSans;
+            box-sizing: border-box;
+        }
+        @font-face {
+            font-family: ProductSans;
+            src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+        }
+        body{
+            margin: 30px;
+        }
+        #topic_heading{
+            font-size: 30px;
+            color: gold;
+        }
+    </style>
+
+    <!-- External JavaScript Coding -->
+    <!-- JavaScript code is written in a separate (.js) file -->
+    <!-- Use 'defer' when accessing HTML elements (DOM) -->
+    <!-- <script src="ExternalJavaScriptCoding.js" defer></script> -->
+</head>
+<body>
+    <h1 id="topic_heading">ExternalJavaScriptCoding</h1>
+
+    <!-- External JavaScript -->
+    <!-- Placed at the end of <body> so HTML loads first and DOM elements can be accessed -->
+    <script src="ExternalJavaScriptCoding.js"></script>
+</body>
+</html>
