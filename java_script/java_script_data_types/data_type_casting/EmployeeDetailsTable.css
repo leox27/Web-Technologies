@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: ProductSans;
+}
+
+@font-face {
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+body{
+    margin: 25px;
+}
+
+#employee_table_caption{
+    font-size: 50px;
+    color: purple;
+    background-color: lavenderblush;
+}
+
+.employee_table_head_rows{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.odd_rows{
+    background-color: gray;
+}
+.even_rows{
+    background-color: lightgray;
+}
