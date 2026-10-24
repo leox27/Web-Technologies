@@ -1,0 +1,24 @@
+> JavaScript CodingWays:
+    1.JavaScript coding will be done in two ways:
+        1.1.Internal JavaScript Coding.
+        1.2.External JavaScript Coding.
+
+1.1.Internal JavaScript Coding:
+    1.The process of providing the JavaScript codes with in the same html file by using <script> tag is known as Internal JavaScript Coding.
+    2.Whenever developer performs DOM[DocumentObjectModel] manipulations, Providing <script> tag inside the <body> tag after HTML lines of code is recommended.
+    3.Whenever developer does not performs DOM[DocumentObjectModel] manipulations, Providing <script> tag inside <head> tag is recommended.
+
+1.2.External JavaScript Coding:
+    1.The process of providing the JavaScript codes with in new java script file(.js) is known as External JavaScript Coding.
+    2.JavaScript files can be loaded or embedded in two ways.
+        2.1.Synchronous JavaScript File Loading.
+        2.2.Asynchronous JavaScript File Loading.
+    3.Whenever developer performs DOM[DocumentObjectModel] manipulations, Providing <script src="ExternalJavaScript.js"></script> tag inside the <body> tag after HTML lines of code is recommended.
+    4.Whenever developer does not performs DOM[DocumentObjectModel] manipulations, Providing <script src="ExternalJavaScript.js"></script> tag inside the <head> tag is recommended.
+    5.But from boiler plate point of view, Any linking or loading should happen only from <head> tag.
+    6.Even developer performs DOM[DocumentObjectModel] manipulations, Providing the ExternalJavaScript file inside the <head> tag is recommended. But, V8Engine cannot get the access the elements properly from DOM tree because of line by line executions.
+    7.To make V8Engine to access the DOM elements, developer have to use 'defer' attribute which is one of the boolean attribute.
+
+> What is the purpose of defer attribute?
+    1.defer is an boolean attribute which is used for deferring(postponing) the execution of JavaScript.
+    2.By postponing, rendering engine will execute HTML code first and then lets JavaScript Engine(V8Engine) to execute JavaScript codes, so that JavaScript Engine can access the DOM elements without throwing any errors and DOM[DocumentObjectModel] manipulation will be achieved.

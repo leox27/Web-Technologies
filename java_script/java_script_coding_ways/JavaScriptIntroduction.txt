@@ -1,0 +1,19 @@
+JavaScriptIntroduction:
+    1.In 1993, Web Application started ruling the software industry.
+    2.But Web Applications were like digital magazines and there was no interaction between the user and web page because Web Applications were created only by using HTML and CSS.
+    3.In 1995, Web Developers started converting the digital magazines into user interactive web pages because of Web Applications were created by using JavaScript.
+
+> What is JavaScript?
+    1.JavaScript is an object-oriented, object-based programming language. The language which uses keywords for building the logic is called as programming language.
+In object-oriented programing language, Developer can create an object, only after class is being created but in object-oriented, Developer can create the object even without the class creation.
+    2.JavaScript is used for validation the data in FrontEnd, So We call JavaScript as Scripting language, The language which is used for validations are called as Scripting language.
+    3.JavaScript is compiled and interpreted language, where compilation is done by using JIT Compiler which stands for JustInTime Compiler which checks the code syntax is proper or not and execution is done by JavaScript Engine which is present inside Browsers which executes the code line by line.
+Every Browsers has it's own JavaScript Engines, Chrome Browser has V8Engine, Microsoft Edge Browser has ChakraEngine and Safari Browser has JavaScript Core Engine.
+    4.JavaScript is dynamically typed language, The language which allocates the datatypes at it's execution time, We call that language as dynamically typed language.
+    5.JavaScript is single threaded language, Every lines of JavaScript codes will be executed inside the single thread which is technically called as CallStack.
+    6.JavaScript is a case-sensitive programing language and something which have to be written, that have to be written as it is present and without changing the cases.
+    7.JavaScript is simple language as it uses, numbers, alphabets and special characters.
+
+> Why we need JavaScript?
+    1.JavaScript converts the static web applications into dynamic web applications by adding functionality to the web elements, So that web page will become user interactive web page.
+    2.JavaScript is used for providing dynamic styling to the web page, where static stylings will be done by CSS.
